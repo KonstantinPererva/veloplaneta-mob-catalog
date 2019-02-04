@@ -1,0 +1,76 @@
+.button-mob-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 41px;
+  height: 40px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  transform: rotate(0);
+  animation: rotateButtonMenu .3s .15s forwards;
+
+  &__line {
+    position: relative;
+    display: block;
+    background: #fff;
+    width: 31px;
+    height: 2px;
+
+    &:nth-child(2) {
+      animation: transparentLine .3s .15s forwards;
+    }
+
+    &:first-child, &:last-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    &:first-child {
+      transform: translateY(-8px);
+      animation: moveLineBottom .3s .15s forwards;
+    }
+
+    &:last-child {
+      transform: translateY(8px);
+      animation: moveLineTop .3s .15s forwards;
+    }
+  }
+}
+
+@keyframes moveLineBottom {
+  25% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0) rotate(45deg);
+  }
+}
+
+@keyframes moveLineTop {
+  25% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0) rotate(-45deg);
+  }
+}
+
+@keyframes rotateButtonMenu {
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes transparentLine {
+  100% {
+    opacity: 0;
+  }
+}

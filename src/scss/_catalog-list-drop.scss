@@ -1,0 +1,8 @@
+.catalog-list-drop {
+  @extend .catalog-menu-list;
+  padding: 0;
+
+  &.active {
+    display: block !important;
+  }
+}
