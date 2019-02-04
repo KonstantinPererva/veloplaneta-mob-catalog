@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Велопланета</title>
+    <link rel="stylesheet" href="dist/css/app.css" />
+</head>
+
+<body>
+    <div class="personal-account">
+        <header class="header-mob">
+            <div class="header-mob__button">
+                <button type="button" class="button-mob-menu">
+                    <span class="button-mob-menu__line"></span>
+                    <span class="button-mob-menu__line"></span>
+                    <span class="button-mob-menu__line"></span>
+                </button>
+            </div>
+            
+            <div class="header-mob__menu">
+                <ul class="mob-menu-list">
+                    <li class="mob-menu-list__item">
+                        <a href="#" class="mob-menu-link">Каталог</a>
+                    </li>
+
+                    <li class="mob-menu-list__item">
+                        <a href="#" class="mob-menu-link">Журнал заказов</a>
+                    </li>
+
+                    <li class="mob-menu-list__item">
+                        <a href="#" class="mob-menu-link">Взаиморасчеты</a>
+                    </li>
+
+                    <li class="mob-menu-list__item">
+                        <a href="#" class="mob-menu-link">Рекламации</a>
+                    </li>
+
+                    <li class="mob-menu-list__item">
+                        <a href="#" class="mob-menu-link">Предзаказ</a>
+                    </li>
+
+                    <li class="mob-menu-list__item">
+                        <a href="#" class="mob-menu-link">Новости</a>
+                    </li>
+
+                    <li class="mob-menu-list__item">
+                        <a href="#" class="mob-menu-link">Профиль</a>
+                    </li>
+
+                    <li class="mob-menu-list__item">
+                        <a href="#" class="mob-menu-link">Контакты</a>
+                    </li>
+
+                    <li class="mob-menu-list__item">
+                        <a href="#" class="mob-menu-link">Выход</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="catalog-menu-wrapper">
+                <ul class="catalog-menu-list">
+                    <li class="catalog-menu-list__item" data-menu="container">
+                        <a href="#" class="catalog-link-drop" data-menu="button">Велосипеды</a>
+
+                        <ul class="catalog-menu-list-drop" data-menu="dropBox" style="display: none" data-menu="dropBox">
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Горные</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Городские</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Шоссейные</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Детские</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Беговелы</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Самокаты</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">BMX</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="catalog-menu-list__item" data-menu="container">
+                        <a href="#" class="catalog-link-drop" data-menu="button">Компоненты</a>
+
+                        <ul class="catalog-menu-list-drop" data-menu="dropBox" style="display: none">
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link-drop" data-menu="button">Рамы</a>
+
+                                <ul class="catalog-menu-list-drop" data-menu="dropBox" style="display: none">
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Запчасти для рам</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link-drop" data-menu="button">Вилки, амортизаторы</a>
+
+                                <ul class="catalog-menu-list-drop" data-menu="dropBox" style="display: none">
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Вилки</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Запчасти для вилок</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link-drop" data-menu="button">Привод</a>
+
+                                <ul class="catalog-menu-list-drop" data-menu="dropBox" style="display: none">
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Звезды к шатунам</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Звезды к шатунам</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Каретки</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Педали</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Компоненты к педалям</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Задние звезды</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Цепи</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Болты шатунов, бонки</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link-drop" data-menu="button">Трансмиссия</a>
+
+                                <ul class="catalog-menu-list-drop" data-menu="dropBox" style="display: none">
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Переключатели передние</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Переключатели задние</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Ручки переключения</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Успокоители, натяжители цепи</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Ролики</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link-drop" data-menu="button">Колесные части</a>
+
+                                <ul class="catalog-menu-list-drop" data-menu="dropBox" style="display: none">
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Колеса</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Покрышки</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Втулки передние</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Спицы</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Обода</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Втулки задние</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Ниппеля</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Ободные ленты</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Камеры</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Колпачки для камер</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Эксцентрики, оси</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link-drop" data-menu="button">Тормозные системы</a>
+
+                                <ul class="catalog-menu-list-drop" data-menu="dropBox" style="display: none">
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Тормозные колодки</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Дисковые тормоза</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Ободные тормоза</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Тормозные ручки</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Компоненты к тормозам</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link-drop" data-menu="button">Седла, подседелы</a>
+
+                                <ul class="catalog-menu-list-drop" data-menu="dropBox" style="display: none">
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Седла</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Подседельные трубы</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Хомуты</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link-drop" data-menu="button">Рулевое управление</a>
+
+                                <ul class="catalog-menu-list-drop" data-menu="dropBox" style="display: none">
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Рули</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Рулевые колонки</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Выносы руля</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Рога</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Баренды, замки</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Грипсы</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Обмотка руля</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link-drop" data-menu="button">Тросики, рубашки и колпачки</a>
+
+                                <ul class="catalog-menu-list-drop" data-menu="dropBox" style="display: none">
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Тросики</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Рубашки</a>
+                                    </li>
+
+                                    <li class="catalog-menu-list__item">
+                                        <a href="#" class="catalog-link">Колпачки</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="catalog-menu-list__item" data-menu="container">
+                        <a href="#" class="catalog-link-drop" data-menu="button">Инструменты</a>
+
+                        <ul class="catalog-menu-list-drop" data-menu="dropBox" style="display: none">
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Инструменты</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Смазки</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Мойки, очистители</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Хранение велосипеда</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="catalog-menu-list__item" data-menu="container">
+                        <a href="#" class="catalog-link-drop" data-menu="button">Одежда</a>
+
+                        <ul class="catalog-menu-list-drop" data-menu="dropBox" style="display: none">
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Джерси короткий рукав</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Джерси длинный рукав</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Куртки</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Шорты</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Штаны</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Перчатки</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Головные уборы</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Шлемы</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Очки</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Термобельё</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Обувь</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Защита</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="catalog-menu-list__item" data-menu="container">
+                        <a href="#" class="catalog-link-drop" data-menu="button">Аксессуары</a>
+
+                        <ul class="catalog-menu-list-drop" data-menu="dropBox" style="display: none">
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Крылья</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Багажники</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Корзины</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Замки</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Сумки</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Рюкзаки</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Питьевые системы</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Освещение</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="catalog-menu-list__item" data-menu="container">
+                        <a href="#" class="catalog-link-drop" data-menu="button">Зимние товары</a>
+
+                        <ul class="catalog-menu-list-drop" data-menu="dropBox" style="display: none">
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Зимняя защита</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Перчатки</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Ледоступы</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Санки, ледянки</a>
+                            </li>
+
+                            <li class="catalog-menu-list__item">
+                                <a href="#" class="catalog-link">Аксессуары</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="catalog-menu-wrapper__button">
+                    <button class="button-download-price" type="button">
+                        <span class="button-download-price__text">Скачать прайс</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="personal-account__container">
+            <div class="catalog-mob">
+                <ul class="catalog-mob-list">
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 1</div>
+                            <div class="catalog-mob-card__price">10 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 2</div>
+                            <div class="catalog-mob-card__price">20 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 3</div>
+                            <div class="catalog-mob-card__price">30 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 4</div>
+                            <div class="catalog-mob-card__price">40 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 5</div>
+                            <div class="catalog-mob-card__price">50 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 6</div>
+                            <div class="catalog-mob-card__price">60 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 7</div>
+                            <div class="catalog-mob-card__price">70 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 8</div>
+                            <div class="catalog-mob-card__price">80 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 9</div>
+                            <div class="catalog-mob-card__price">90 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 10</div>
+                            <div class="catalog-mob-card__price">100 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 11</div>
+                            <div class="catalog-mob-card__price">110 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 12</div>
+                            <div class="catalog-mob-card__price">120 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 13</div>
+                            <div class="catalog-mob-card__price">130 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 14</div>
+                            <div class="catalog-mob-card__price">140 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 15</div>
+                            <div class="catalog-mob-card__price">150 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 16</div>
+                            <div class="catalog-mob-card__price">160 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 17</div>
+                            <div class="catalog-mob-card__price">170 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 18</div>
+                            <div class="catalog-mob-card__price">180 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 19</div>
+                            <div class="catalog-mob-card__price">190 uah</div>
+                        </div>
+                    </li>
+                    <li class="catalog-mob-list__item">
+                        <div class="catalog-mob-card">
+                            <div class="catalog-mob-card__title">item 20</div>
+                            <div class="catalog-mob-card__price">200 uah</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="detail" style="display: none">
+            <div class="detail__container">
+                <div class="detail-goods">
+                    <div class="detail-goods__button-back">
+                        <button type="button" class="button-back">
+                            <span class="button-back__ico-wrap">
+                                <svg width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.4737 1.60449L2 10.5782L11.4737 20.1045" stroke="#E30613" stroke-width="2"/>
+                                </svg>
+                            </span>
+
+                            <span class="button-back__text">Назад</span>
+                        </button>
+                    </div>
+
+                    <div class="detail-goods__hold">
+                        <div class="goods-picture">
+                            <div class="goods-picture__img-wrap">
+                                <img src="src/images/goods.jpg" alt="goods" class="goods-picture__img" />
+
+                                <span class="goods-picture__substrate">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.72766 0C3.02034 0 0 3.02031 0 6.72765C0 10.435 3.02034 13.4553 6.72766 13.4553C8.33105 13.4553 9.80383 12.8885 10.9615 11.9474L15.5142 16.5002C15.786 16.7719 16.2284 16.772 16.5002 16.5002C16.772 16.2284 16.772 15.7932 16.5002 15.5215L11.9474 10.9687C12.8904 9.81049 13.4553 8.33283 13.4553 6.72765C13.4553 3.02031 10.435 0 6.72766 0ZM6.72766 1.39193C9.68272 1.39193 12.0634 3.77258 12.0634 6.72765C12.0634 9.6827 9.68272 12.0634 6.72766 12.0634C3.77261 12.0634 1.39193 9.6827 1.39193 6.72765C1.39193 3.77258 3.7726 1.39193 6.72766 1.39193Z" fill="white"/>
+                                    </svg>
+                                </span>
+                            </div>
+
+                            <div class="goods-picture__img-small">
+                                <ul class="img-small-list">
+                                    <li class="img-small-list__item">
+                                        <div class="img-small-card">
+                                            <img src="src/images/goods.jpg" alt="goods" class="img-small-card__img" />
+                                        </div>
+                                    </li>
+
+                                    <li class="img-small-list__item">
+                                        <div class="img-small-card">
+                                            <img src="src/images/goods.jpg" alt="goods" class="img-small-card__img" />
+                                        </div>
+                                    </li>
+
+                                    <li class="img-small-list__item">
+                                        <div class="img-small-card">
+                                            <img src="src/images/goods.jpg" alt="goods" class="img-small-card__img" />
+                                        </div>
+                                    </li>
+
+                                    <li class="img-small-list__item">
+                                        <div class="img-small-card">
+                                            <img src="src/images/goods.jpg" alt="goods" class="img-small-card__img" />
+
+                                            <span class="img-small-card__substrate">
+                                                <span class="img-small-card__more-num">+5</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h2 class="goods-title">
+                            <span class="goods-title__text">Pride ROCX 8.1 2018</span>
+                        </h2>
+
+                        <div class="detail-goods-box-scroll">
+                            <div class="goods-vendor-code">
+                                <span class="goods-vendor-code__title">Артикул</span>
+
+                                <span class="goods-vendor-code__num">234585261</span>
+                            </div>
+
+                            <div class="goods-price">
+                                <span class="goods-price__title">Цена</span>
+
+                                <div class="goods-price__block">
+                                    <span class="goods-price__num">123 456</span>
+
+                                    <span class="goods-price__cur">uah</span>
+                                </div>
+                            </div>
+
+                            <div class="order-quantity">
+                                <span class="order-quantity__title">Количество заказа:</span>
+
+                                <form action="!" class="form-order-quantity">
+                                    <button type="button" class="form-order-quantity__action">
+                                        <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="10" height="1.42857" rx="0.714286" fill="#E30613"/>
+                                        </svg>
+                                    </button>
+
+                                    <input type="text" class="form-order-quantity__input" value="1">
+
+                                    <button type="button" class="form-order-quantity__action">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" fill="#E30613"/>
+                                            <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" fill="#E30613"/>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+
+                            <div class="goods-box">
+                                <div class="goods-box-title">
+                                    <div class="goods-box-title__wrap">
+                                        <span class="goods-box-title__num">1</span>
+
+                                        <span class="goods-box-title__text">Описание товара</span>
+                                    </div>
+
+                                    <span class="goods-box-title__ico-wrap">
+                                        <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                            <rect width="10" height="1.42857" rx="0.714286" fill="#E30613"/>
+                                        </svg>
+
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" fill="#E30613"/>
+                                            <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" fill="#E30613"/>
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <div class="goods-descr" style="display: none">
+                                    <p class="goods-descr__text">Долгожданная новинка от производителя Pride - велосипед 28"" Pride RoCX 8.1! Это универсальный байк, который подойдет для регулярных поездок по городу, для тренировок и даже для туризма. Правильная геометрия обеспечивает корректную посадку райдера, тем самым улучшая комфорт при длительном катании. Руль имеет эргономичную платформу для удобного прямого хвата. Универсальный протектор делает велосипед универсальным для любой поверхности, а ширина покрышек 38мм позволяет уверенно катить по жесткому бездорожью.</p>
+                                </div>
+                            </div>
+
+                            <div class="goods-box">
+                                <div class="goods-box-title">
+                                    <div class="goods-box-title__wrap">
+                                        <span class="goods-box-title__num">2</span>
+
+                                        <span class="goods-box-title__text">Характеристики товара</span>
+                                    </div>
+
+                                    <span class="goods-box-title__ico-wrap">
+                                        <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="10" height="1.42857" rx="0.714286" fill="#E30613"/>
+                                        </svg>
+
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                            <path d="M0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H9.28571C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28571 5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5Z" fill="#E30613"/>
+                                            <path d="M5 10C4.60551 10 4.28571 9.6802 4.28571 9.28571V0.714286C4.28571 0.319797 4.60551 0 5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V9.28571C5.71429 9.6802 5.39449 10 5 10Z" fill="#E30613"/>
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <div class="goods-characteristics">
+                                    <ul class="goods-characteristics-list">
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Рама</span>
+
+                                            <span class="goods-characteristics__value">PRIDE алюминий 6061Т, 700С</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Вилка</span>
+
+                                            <span class="goods-characteristics__value">PRIDE алюминий 6061T, жесткая</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Шатуны</span>
+
+                                            <span class="goods-characteristics__value">Prowheel, 175мм, 34/50Т, алюминий</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Ручки переключения(манетки)</span>
+
+                                            <span class="goods-characteristics__value">Shimano Claris ST-R2000, 2x8 ск.</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Передний переключатель</span>
+
+                                            <span class="goods-characteristics__value">N/A</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Задний переключатель</span>
+
+                                            <span class="goods-characteristics__value">N/A</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Кассета</span>
+
+                                            <span class="goods-characteristics__value">N/A</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Цепь</span>
+
+                                            <span class="goods-characteristics__value">N/A</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Передний тормоз</span>
+
+                                            <span class="goods-characteristics__value">N/A</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Задний тормоз</span>
+
+                                            <span class="goods-characteristics__value">N/A</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Ручки тормоза</span>
+
+                                            <span class="goods-characteristics__value">N/A</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Количество скоростей</span>
+
+                                            <span class="goods-characteristics__value">N/A</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Обода</span>
+
+                                            <span class="goods-characteristics__value">N/A</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Втулки</span>
+
+                                            <span class="goods-characteristics__value">N/A</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Покрышки</span>
+
+                                            <span class="goods-characteristics__value">N/A</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Педали</span>
+
+                                            <span class="goods-characteristics__value">N/A</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Руль</span>
+
+                                            <span class="goods-characteristics__value">PRIDE, 31,8, ширина 52-54см- 420мм; 56-58см- 460мм, компакт, баттинг, алюминий</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Вынос</span>
+
+                                            <span class="goods-characteristics__value">PRIDE, S= 60мм, M= 75мм, L\XL.= 90мм, алюминий</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Рулевая колонка</span>
+
+                                            <span class="goods-characteristics__value">N/A</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Грипсы</span>
+
+                                            <span class="goods-characteristics__value">N/A</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Подседельная труба</span>
+
+                                            <span class="goods-characteristics__value">N/A</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Седло</span>
+
+                                            <span class="goods-characteristics__value">N/A</span>
+                                        </li>
+
+                                        <li class="goods-characteristics-list__item">
+                                            <span class="goods-characteristics__property">Спицы</span>
+
+                                            <span class="goods-characteristics__value">N/A</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-goods__button">
+                        <button class="goods-add" type="button">
+                            <span class="goods-add__text">Добавить</span>
+                        </button>
+
+                        <button class="goods-cancellation" type="button">
+                            <span class="goods-cancellation__text">Отмена</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <span class="detail__substrate"></span>
+        </div>
+    </div>
+
+    <script src="/dist/js/app.js"></script>
+</body>
+</html>

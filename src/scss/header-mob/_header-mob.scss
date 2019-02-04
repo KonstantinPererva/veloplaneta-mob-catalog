@@ -1,0 +1,17 @@
+.header-mob {
+  height: 40px;
+  background: $c-red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &__menu {
+    width: 320px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: .2s;
+    transform: translateX(-100%);
+  }
+}
