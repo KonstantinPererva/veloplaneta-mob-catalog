@@ -1,6 +1,5 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-// const TerserPlugin = require('terser-webpack-plugin');
 
 var conf = {
     context: path.resolve(__dirname, 'src'),
@@ -23,6 +22,15 @@ var conf = {
                     fallback: 'style-loader',
                     use: ['css-loader', 'sass-loader']
                 })
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: 'fonts/[name][hash].[ext]'
+                    }
+                }
             }
         ]
     },
