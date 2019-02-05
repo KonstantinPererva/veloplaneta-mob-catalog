@@ -14,6 +14,12 @@ var conf = {
         filename: 'js/[name].js',
         publicPath: '../'
     },
+    devServer: {
+        contentBase: path.resolve(__dirname, ''),
+        port: 9000,
+        compress: true,
+        open: true
+    },
     module: {
         rules: [
             {
