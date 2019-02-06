@@ -1,5 +1,14 @@
 .header-mob-panel {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: relative;
+  background: $c-red;
+  z-index: 5;
+
+  &__hold {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
 }

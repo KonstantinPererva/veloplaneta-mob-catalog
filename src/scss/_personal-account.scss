@@ -11,8 +11,10 @@
     flex-grow: 1;
 
     @media (max-width: 1023px) {
-      padding: 50px 10px 10px;
       display: block;
+      max-width: 768px;
+      margin: 0 auto;
+      padding: 50px 10px 10px;
     }
   }
 }

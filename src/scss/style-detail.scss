@@ -34,10 +34,16 @@
 @import "./header-mob/header-mob";
 @import "./header-mob/button-mob-menu";
 @import "./header-mob/header-mob-panel";
+@import "./header-mob/mob-menu-list";
+@import "./header-mob/mob-menu-link";
+@import "./header-mob/mob-substrate";
+@import "./header-mob/button-catalog-menu";
 
 @import "./catalog-mob/catalog-mob";
 @import "./catalog-mob/catalog-mob-list";
 @import "./catalog-mob/catalog-mob-card";
+@import "./catalog-mob/catalog-menu-list-drop";
+@import "./catalog-mob/catalog-link";
 @import "./catalog-link";
 @import "./catalog-link-drop";
 @import "./catalog-list-drop";
