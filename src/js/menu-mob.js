@@ -6,6 +6,7 @@ var mobCatalog = document.querySelector('[data-mob-catalog="container"]');
 var mobDetail = document.querySelector('[data-mob-detail="container"]');
 var mobDetailButtonBack = document.querySelector('[ data-mob-detail="button-back"]');
 var goods = document.querySelectorAll('.catalog-mob-card');
+var goodsArr = [].slice.call(goods);
 
 function menuOpen() {
     buttonMobMenu.classList.add('active');
@@ -29,18 +30,19 @@ function menuClose() {
 
 function menu() {
     if(!buttonMobMenu.open) {
-        [].forEach.call(goods, function (el) {
-            if(el.open){
-                detailClose(el);
-                setTimeout(menuOpen,200);
-            }
-        });
+        if (mobDetail.open) {
+            detailClose();
+            setTimeout(menuOpen,200);
+            return;
+        }
+
         if(buttonMobCatalog.open){
             catalogClose();
             setTimeout(menuOpen,200);
-        } else {
-            menuOpen();
+            return;
         }
+
+        menuOpen();
     } else {
         menuClose();
     }
@@ -48,19 +50,19 @@ function menu() {
 
 function catalog() {
     if(!buttonMobCatalog.open) {
-        [].forEach.call(goods, function (el) {
-            if(el.open){
-                detailClose(el);
-                setTimeout(catalogOpen,200)
-            }
-        });
-        if(buttonMobMenu.open){
-            menuClose();
-            setTimeout(catalogOpen,200)
-        } else {
-            catalogOpen();
+        if (mobDetail.open) {
+            detailClose();
+            setTimeout(catalogOpen,200);
+            return;
         }
 
+        if(buttonMobMenu.open){
+            menuClose();
+            setTimeout(catalogOpen,200);
+            return;
+        }
+
+        catalogOpen();
     } else {
         catalogClose();
     }
@@ -86,40 +88,40 @@ function catalogClose() {
     buttonMobCatalog.open = false;
 }
 
-function detailOpen(el) {
+function detailOpen() {
     mobDetail.classList.add('active');
     substrate.classList.add('active');
     setTimeout(function () {
         substrate.classList.add('visible');
     },10);
-    el.open = true;
+    mobDetail.open = true;
 }
 
-function detailClose(el) {
+function detailClose() {
     mobDetail.classList.remove('active');
     substrate.classList.remove('visible');
     setTimeout(function () {
         substrate.classList.remove('active');
     },200);
-    el.open = false;
+    mobDetail.open = false;
 }
 
-function detail(el) {
-    if(!el.open) {
-        detailOpen(el);
+function detail() {
+    if(!mobDetail.open) {
+        detailOpen();
     } else {
-        detailClose(el);
+        detailClose();
     }
 }
 
-[].forEach.call(goods, function (el) {
+goodsArr.map(function (el) {
     el.addEventListener('click', function () {
-        detail(el);
-
-        mobDetailButtonBack.addEventListener('click', function () {
-            detailClose(el);
-        });
+        detail();
     })
+});
+
+mobDetailButtonBack.addEventListener('click', function () {
+    detailClose();
 });
 
 buttonMobMenu.addEventListener('click',function () {
@@ -131,9 +133,9 @@ buttonMobCatalog.addEventListener('click',function () {
 });
 
 substrate.addEventListener('click', function () {
-    menuClose();
-    catalogClose();
-    [].forEach.call(goods, function (el) {
-        detailClose(el);
-    });
+    if(buttonMobMenu.open){menuClose();}
+
+    if(buttonMobCatalog.open){catalogClose();}
+
+    if(mobDetail.open){detailClose();}
 });

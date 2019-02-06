@@ -1,0 +1,9 @@
+.orders-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  &__item {
+    display: flex;
+  }
+}

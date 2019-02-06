@@ -1,0 +1,10 @@
+.logo {
+  &__link {
+    display: block;
+
+    & svg {
+      display: block;
+      height: 20px;
+    }
+  }
+}

@@ -1,10 +1,17 @@
 .button-catalog-menu {
   @extend .button-common;
+  flex-shrink: 0;
   background: transparent;
   font-size: 12px;
   color: #fff;
   border: 1px solid #fff;
   border-radius: 2px;
-  padding: 4px 12px;
-  height: auto;
+  padding: 0 12px;
+  height: 27px;
+  margin: 0 0 0 20px;
+
+  &.active {
+    background: #fff;
+    color: $c-red;
+  }
 }
