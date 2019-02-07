@@ -10,5 +10,9 @@
     &:last-child {
       border: 0;
     }
+
+    &:nth-child(2n) {
+      background: #FCFCFC;
+    }
   }
 }

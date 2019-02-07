@@ -4,21 +4,32 @@
   width: 100%;
 
   &__title {
+    flex-grow: 1;
     display: block;
     font-family: $f-l;
     font-size: 12px;
+    line-height: 17px;
     color: $c-text;
-    width: 70%;
     border-right: 1px solid $c-border;
     padding: 6px 15px;
+
+    @media (max-width: 360px) {
+      padding: 6px 12px;
+    }
   }
 
   &__price {
     display: block;
     font-family: $f-l;
     font-size: 12px;
+    line-height: 17px;
     color: $c-text;
-    width: 30%;
+    width: 120px;
     padding: 6px 15px;
+
+    @media (max-width: 360px) {
+      width: 90px;
+      padding: 6px 12px;
+    }
   }
 }

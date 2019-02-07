@@ -1,0 +1,38 @@
+.button-panel-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  font-family: $f-l;
+  line-height: 17px;
+  transition: .15s;
+  outline: none;
+  user-select: none;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+  height: 27px;
+  border: 1px solid $c-red;
+  font-size: 13px;
+  color: $c-red;
+  background: transparent;
+  padding: 0 12px;
+
+  &.active {
+    background: $c-red;
+    color: #fff;
+  }
+
+  &:hover {
+    @media (hover:hover) {
+      outline: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+
+  &:hover,&:focus,&:active {
+    text-decoration: none;
+    outline: none;
+  }
+}

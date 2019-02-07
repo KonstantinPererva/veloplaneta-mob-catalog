@@ -50,5 +50,21 @@
 @import "./catalog-list-drop";
 @import "./button-download-price";
 
-@import "./orders/orders-list";
-@import "./orders/button-orders-list";
+@import "panel-page-mob/orders";
+@import "panel-page-mob/orders-list";
+@import "panel-page-mob/button-orders-list";
+@import "panel-page-mob/panel-page-mob";
+@import "panel-page-mob/filter-mob";
+@import "panel-page-mob/button-filter-list";
+@import "panel-page-mob/filter-card";
+@import "panel-page-mob/filter-card-link";
+@import "panel-page-mob/filter-card-title";
+@import "panel-page-mob/filter-list";
+@import "panel-page-mob/filter-list-drop";
+@import "panel-page-mob/filter-selected-list";
+@import "panel-page-mob/button-reset-filter";
+@import "panel-page-mob/catalog-filter";
+@import "panel-page-mob/catalog-filter-title";
+@import "panel-page-mob/button-panel-page";
+@import "panel-page-mob/catalog-form-search";
+@import "title-goods-group";

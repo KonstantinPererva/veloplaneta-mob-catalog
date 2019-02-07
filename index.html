@@ -14,7 +14,7 @@
         <header class="header-mob">
             <div class="header-mob-panel">
                 <div class="header-mob-panel__hold">
-                    <h1 class="logo">
+                    <div class="logo">
                         <a class="logo__link" href="#">
                             <svg height="20" viewBox="0 0 181 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 27.5165V0.542969H6.27573C10.4998 0.542969 13.2756 2.71533 13.2756 8.08589C13.2756 10.6807 12.1894 12.672 10.5601 13.4565C12.5514 14.3616 13.8187 16.4736 13.8187 19.6115C13.8187 24.982 11.1032 27.5165 6.63778 27.5165H0ZM5.73263 11.6462C7.84464 11.6462 8.7498 10.6203 8.7498 8.14624C8.7498 5.61182 7.7843 4.52564 5.73263 4.52564H4.52576V11.6462H5.73263ZM4.46543 15.6892V23.5338H6.15504C8.26706 23.5338 9.2929 22.3873 9.2929 19.5511C9.2929 16.8357 8.26706 15.6892 6.27573 15.6892H4.46543Z" fill="#ffffff"/>
@@ -30,7 +30,7 @@
                                 <path d="M64.5072 19.4916C64.5072 25.2242 61.6107 28 57.2056 28C52.8005 28 49.9041 25.2242 49.9041 19.4916V8.62977C49.9041 2.89714 52.8005 0.121338 57.2056 0.121338C61.6107 0.121338 64.5072 2.89714 64.5072 8.62977V19.4916ZM60.0417 9.17286C60.0417 5.61259 59.1366 4.10401 57.2056 4.10401C55.2746 4.10401 54.3695 5.67294 54.3695 9.17286V18.8882C54.3695 22.4484 55.2746 23.957 57.2056 23.957C59.1366 23.957 60.0417 22.3881 60.0417 18.8882V9.17286Z" fill="#ffffff"/>
                             </svg>
                         </a>
-                    </h1>
+                    </div>
 
                     <div class="header-mob-panel__block">
                         <button class="button-catalog-menu" data-mob-catalog="button">
@@ -514,20 +514,318 @@
         </header>
 
         <div class="personal-account__container">
-            <div class="orders">
-                <div class="orders__hold">
-                    <button type="button" class="button-orders-list">
-                        <span class="button-orders-list__text">Мои заказы</span>
-                    </button>
+            <div class="panel-page-mob">
+                <div class="panel-page-mob__search">
+                    <form action="!" class="catalog-form-search">
+                        <div class="catalog-form-search__row">
+                            <input type="text" class="catalog-form-search__input" placeholder="Введите поисковый вопрос">
 
-                    <ul class="orders-list">
-                        <li class="orders-list__item">
-                            <button type="button" class="button-order">Заказ 1</button>
-                            <button type="button" class="button-delete-order">x</button>
-                        </li>
-                    </ul>
+                            <button type="submit" class="catalog-form-search__button">
+                                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.72765 0C3.02034 0 0 2.69408 0 6.00097C0 9.30785 3.02033 12.0019 6.72765 12.0019C8.33103 12.0019 9.80381 11.4964 10.9614 10.6569L15.5142 14.7179C15.786 14.9603 16.2284 14.9603 16.5001 14.7179C16.7719 14.4755 16.7719 14.0873 16.5001 13.8449L11.9474 9.78392C12.8904 8.75081 13.4553 7.43276 13.4553 6.00097C13.4553 2.69408 10.435 0 6.72765 0ZM6.72765 1.24158C9.68271 1.24158 12.0634 3.36508 12.0634 6.00097C12.0634 8.63683 9.6827 10.7604 6.72765 10.7604C3.7726 10.7604 1.39193 8.63683 1.39193 6.00097C1.39193 3.36508 3.7726 1.24158 6.72765 1.24158Z" fill="#898989"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="panel-page-mob__buttons">
+                    <div class="orders">
+                        <div class="orders__hold">
+                            <button type="button" class="button-orders-list">
+                                <span class="button-orders-list__text">Мои заказы</span>
+                            </button>
+
+                            <ul class="orders-list">
+                                <li class="orders-list__item">
+                                    <button type="button" class="button-order">Заказ 1</button>
+                                    <button type="button" class="button-delete-order">x</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="filter-mob">
+                        <button type="button" class="button-filter-list">
+                            <span class="button-filter-list__text">Фильтры</span>
+                        </button>
+
+                        <div class="filter-mob__list">
+                            <div class="catalog-filter">
+                                <div class="catalog-filter__header">
+                                    <div class="catalog-filter-title">
+                                        <span class="catalog-filter-title__text">Фильтры</span>
+                                    </div>
+
+                                    <button class="button-reset-filter">
+                                        <span class="button-reset-filter__text">сбросить все</span>
+                                    </button>
+                                </div>
+
+                                <div class="catalog-filter__body">
+                                    <ul class="filter-list">
+                                        <li class="filter-list__item" data-filter="container">
+                                            <div class="filter-card">
+                                                <div class="filter-card-title" data-filter="button" data-filter="button">
+                                                    <span class="filter-card-title__text">Диаметр, мм</span>
+                                                </div>
+
+                                                <ul class="filter-list-drop" data-filter="dropBox" style="display: none">
+                                                    <li class="filter-list-drop__item">
+                                                        <a href="#" class="filter-card-link">
+                                                            <span class="filter-card-link__text">24</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="filter-list-drop__item">
+                                                        <a href="#" class="filter-card-link active">
+                                                            <span class="filter-card-link__text">55</span>
+
+                                                            <span class="filter-card-link__reset">
+                                                        <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" fill="#ffffff"/>
+                                                        </svg>
+                                                    </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="filter-list-drop__item">
+                                                        <a href="#" class="filter-card-link active">
+                                                            <span class="filter-card-link__text">67</span>
+
+                                                            <span class="filter-card-link__reset">
+                                                        <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" fill="#ffffff"/>
+                                                        </svg>
+                                                    </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <ul class="filter-selected-list">
+                                                    <li class="filter-selected-list__item">
+                                                        <a href="#" class="filter-card-link active">
+                                                            <span class="filter-card-link__text">55</span>
+
+                                                            <span class="filter-card-link__reset">
+                                                            <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" fill="#ffffff"/>
+                                                            </svg>
+                                                        </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="filter-selected-list__item">
+                                                        <a href="#" class="filter-card-link active">
+                                                            <span class="filter-card-link__text">67</span>
+
+                                                            <span class="filter-card-link__reset">
+                                                            <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" fill="#ffffff"/>
+                                                            </svg>
+                                                        </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li class="filter-list__item" data-filter="container">
+                                            <div class="filter-card">
+                                                <div class="filter-card-title" data-filter="button">
+                                                    <span class="filter-card-title__text">Ширина, см</span>
+                                                </div>
+
+                                                <ul class="filter-list-drop" data-filter="dropBox" style="display: none">
+                                                    <li class="filter-list-drop__item">
+                                                        <a href="#" class="filter-card-link">
+                                                            <span class="filter-card-link__text">24</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="filter-list-drop__item">
+                                                        <a href="#" class="filter-card-link">
+                                                            <span class="filter-card-link__text">55</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="filter-list-drop__item">
+                                                        <a href="#" class="filter-card-link">
+                                                            <span class="filter-card-link__text">67</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <ul class="filter-selected-list">
+                                                    <li class="filter-selected-list__item">
+                                                        <a href="#" class="filter-card-link active">
+                                                            <span class="filter-card-link__text">55</span>
+
+                                                            <span class="filter-card-link__reset">
+                                                            <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" fill="#ffffff"/>
+                                                            </svg>
+                                                        </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="filter-selected-list__item">
+                                                        <a href="#" class="filter-card-link active">
+                                                            <span class="filter-card-link__text">67</span>
+
+                                                            <span class="filter-card-link__reset">
+                                                            <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" fill="#ffffff"/>
+                                                            </svg>
+                                                        </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li class="filter-list__item" data-filter="container">
+                                            <div class="filter-card">
+                                                <div class="filter-card-title" data-filter="button">
+                                                    <span class="filter-card-title__text">Высота, см</span>
+                                                </div>
+
+                                                <ul class="filter-list-drop" data-filter="dropBox" style="display: none">
+                                                    <li class="filter-list-drop__item">
+                                                        <a href="#" class="filter-card-link">
+                                                            <span class="filter-card-link__text">24</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="filter-list-drop__item">
+                                                        <a href="#" class="filter-card-link">
+                                                            <span class="filter-card-link__text">55</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="filter-list-drop__item">
+                                                        <a href="#" class="filter-card-link">
+                                                            <span class="filter-card-link__text">67</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <ul class="filter-selected-list">
+                                                    <li class="filter-selected-list__item">
+                                                        <a href="#" class="filter-card-link active">
+                                                            <span class="filter-card-link__text">55</span>
+
+                                                            <span class="filter-card-link__reset">
+                                                            <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" fill="#ffffff"/>
+                                                            </svg>
+                                                        </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="filter-selected-list__item">
+                                                        <a href="#" class="filter-card-link active">
+                                                            <span class="filter-card-link__text">67</span>
+
+                                                            <span class="filter-card-link__reset">
+                                                            <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" fill="#ffffff"/>
+                                                            </svg>
+                                                        </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li class="filter-list__item" data-filter="container">
+                                            <div class="filter-card">
+                                                <div class="filter-card-title" data-filter="button">
+                                                    <span class="filter-card-title__text">Производитель</span>
+                                                </div>
+
+                                                <ul class="filter-list-drop" data-filter="dropBox" style="display: none">
+                                                    <li class="filter-list-drop__item">
+                                                        <a href="#" class="filter-card-link active">
+                                                            <span class="filter-card-link__text">Item</span>
+
+                                                            <span class="filter-card-link__reset">
+                                                            <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" fill="#ffffff"/>
+                                                            </svg>
+                                                        </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="filter-list-drop__item">
+                                                        <a href="#" class="filter-card-link">
+                                                            <span class="filter-card-link__text">ItemItemItem</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="filter-list-drop__item">
+                                                        <a href="#" class="filter-card-link">
+                                                            <span class="filter-card-link__text">ItemItem</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="filter-list-drop__item">
+                                                        <a href="#" class="filter-card-link active">
+                                                            <span class="filter-card-link__text">ItemItemItem</span>
+
+                                                            <span class="filter-card-link__reset">
+                                                            <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" fill="#ffffff"/>
+                                                            </svg>
+                                                        </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="filter-list-drop__item">
+                                                        <a href="#" class="filter-card-link">
+                                                            <span class="filter-card-link__text">Item</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <ul class="filter-selected-list">
+                                                    <li class="filter-selected-list__item">
+                                                        <a href="#" class="filter-card-link active">
+                                                            <span class="filter-card-link__text">Item</span>
+
+                                                            <span class="filter-card-link__reset">
+                                                            <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" fill="#ffffff"/>
+                                                            </svg>
+                                                        </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="filter-selected-list__item">
+                                                        <a href="#" class="filter-card-link active">
+                                                            <span class="filter-card-link__text">ItemItemItem</span>
+
+                                                            <span class="filter-card-link__reset">
+                                                            <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.646447 1.35355L5.64645 6.35355L6.35355 5.64645L1.35355 0.646447L0.646447 1.35355ZM5.64645 0.646447L0.646447 5.64645L1.35355 6.35355L6.35355 1.35355L5.64645 0.646447Z" fill="#ffffff"/>
+                                                            </svg>
+                                                        </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <h1 class="title-goods-group">
+                <span class="title-goods-group__text">Запчасти для рам</span>
+            </h1>
 
             <div class="catalog-mob">
                 <ul class="catalog-mob-list">
